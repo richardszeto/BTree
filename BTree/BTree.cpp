@@ -6,11 +6,16 @@
 //  Copyright © 2018 Richard Szeto. All rights reserved.
 //
 
+#ifndef BTree_cpp
+#define BTree_cpp
+
 #include "BTree.hpp"
 
 #include "Interval.hpp"
-#include "../Stack/Stack.hpp"
-#include "../Queue/Queue.hpp"
+
+// Stack and Queue are templates, so implementation needs to be included
+#include "../Stack/Stack.cpp"
+#include "../Queue/Queue.cpp"
 
 #include <cmath>
 
@@ -985,3 +990,5 @@ const bool BTree<T, K>::isEmpty() const
 {
     return count_ <= 0;
 }
+
+#endif
