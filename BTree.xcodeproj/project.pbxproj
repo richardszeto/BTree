@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B0D5BBB21266A0D00E7D13F /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC95EB12125737500ABCBBF /* gtest.framework */; };
+		3B0D5BBF21268E6000E7D13F /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0D5BBE21268E6000E7D13F /* gtest.framework */; };
 		3B4094CD20F6DB5800C4BE89 /* Interval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B4094CB20F6DB5800C4BE89 /* Interval.cpp */; };
 		3BC95EA82125730800ABCBBF /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BC95EA72125730700ABCBBF /* Queue.cpp */; };
 		3BC95EAF2125733400ABCBBF /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BC95EAE2125733400ABCBBF /* Stack.cpp */; };
@@ -32,13 +32,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B0D5BBE21268E6000E7D13F /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = googletest/gtest.framework; sourceTree = "<group>"; };
 		3B4094CB20F6DB5800C4BE89 /* Interval.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Interval.cpp; sourceTree = "<group>"; };
 		3B4094CC20F6DB5800C4BE89 /* Interval.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Interval.hpp; sourceTree = "<group>"; };
 		3BC95EA72125730700ABCBBF /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
 		3BC95EA92125730C00ABCBBF /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		3BC95EAD2125733100ABCBBF /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		3BC95EAE2125733400ABCBBF /* Stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stack.cpp; sourceTree = "<group>"; };
-		3BC95EB12125737500ABCBBF /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = ../../../../Library/Frameworks/gtest.framework; sourceTree = "<group>"; };
 		3BC95EB3212573BF00ABCBBF /* StackUnitTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StackUnitTest.cpp; sourceTree = "<group>"; };
 		3BC95EB4212573BF00ABCBBF /* StackUnitTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StackUnitTest.hpp; sourceTree = "<group>"; };
 		3BC95EB62125744B00ABCBBF /* QueueUnitTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QueueUnitTest.cpp; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0D5BBB21266A0D00E7D13F /* gtest.framework in Frameworks */,
+				3B0D5BBF21268E6000E7D13F /* gtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 		3BC95EB02125737400ABCBBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3BC95EB12125737500ABCBBF /* gtest.framework */,
+				3B0D5BBE21268E6000E7D13F /* gtest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)/googletest",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -328,7 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)/googletest",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
