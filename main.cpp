@@ -7,7 +7,6 @@
 //
 
 #include <iostream>
-#include "gtest/gtest.h"
 
 // BTree is a template, so implementation needs to be included
 #include "./BTree/BTree.cpp"
@@ -19,9 +18,6 @@ using namespace std;
 
 int main(int argc, const char * argv[])
 {
-    testing::InitGoogleTest(&argc, (char **)argv);
-    int result = RUN_ALL_TESTS();
-    
     BTree<int, int> bt(1000);
     clock_t insertionStart;
     double insertionDuration;
@@ -44,5 +40,5 @@ int main(int argc, const char * argv[])
     cout << "Find 1,000,000th element." << endl;
     cout << "findDuration: " << findDuration << "." << endl;
     
-    return result;
+    return 0;
 }

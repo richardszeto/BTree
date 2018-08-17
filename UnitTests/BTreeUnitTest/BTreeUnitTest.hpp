@@ -12,6 +12,6 @@
 #include "gtest/gtest.h"
 
 // BTree is a template, so implementation needs to be included
-#include "BTree.cpp"
+#include "../../BTree/BTree.cpp"
 
 #endif /* BTreeUnitTest_hpp */

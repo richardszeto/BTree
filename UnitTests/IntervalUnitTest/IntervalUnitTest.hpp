@@ -9,7 +9,7 @@
 #ifndef IntervalUnitTest_hpp
 #define IntervalUnitTest_hpp
 
-#include "Interval.hpp"
 #include "gtest/gtest.h"
+#include "../../BTree/Interval.hpp"
 
 #endif /* IntervalUnitTest_hpp */

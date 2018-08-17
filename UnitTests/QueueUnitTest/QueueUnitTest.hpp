@@ -12,6 +12,6 @@
 #include "gtest/gtest.h"
 
 // Queue is a template, so implementation needs to be included
-#include "Queue.cpp"
+#include "../../Queue/Queue.cpp"
 
 #endif /* QueueUnitTest_hpp */

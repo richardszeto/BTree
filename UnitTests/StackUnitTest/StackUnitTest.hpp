@@ -12,6 +12,6 @@
 #include "gtest/gtest.h"
 
 // Stack is a template, so implementation needs to be included
-#include "Stack.cpp"
+#include "../../Stack/Stack.cpp"
 
 #endif /* StackUnitTest_hpp */
